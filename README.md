@@ -9,4 +9,4 @@
 > 6. JPA的学习案例
 
 ## 此内容将被cherry Pick到master分支上
-
+cherry pick : 将别的分支中的提交或者代码,添加到当前分支
