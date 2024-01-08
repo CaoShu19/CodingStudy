@@ -10,3 +10,4 @@
 
 ## 此内容将被cherry Pick到master分支上
 cherry pick : 将别的分支中的提交或者代码,添加到当前分支
+"此部分可以复制到master分支中"
