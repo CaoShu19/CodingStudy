@@ -21,6 +21,6 @@ public class UserAddress {
     @Column(name = "city", nullable = true, length = 50)
     private String city;
     @ManyToOne
-    @JoinColumn(name = "user_id", referencedColumnName = "id") // 外键
-    private User userByUserId;
+    @JoinColumn(name = "user_id")
+    private User user;
 }

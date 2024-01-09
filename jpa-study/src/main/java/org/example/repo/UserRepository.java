@@ -17,7 +17,7 @@ import java.util.stream.Stream;
  * @date : 2024/1/7 下午8:59
  * @Desc :
  */
-
+@Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
     Page<User> findByName(@Param("name") String name,
                           Pageable pageable);
