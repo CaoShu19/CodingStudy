@@ -20,6 +20,7 @@
         <module>webapp-study</module>
         <module>coding-skill</module>
         <module>jpa-study</module>
+        <module>spring-study</module>
     </modules>
 
     <properties>
