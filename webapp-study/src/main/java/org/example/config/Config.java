@@ -1,6 +1,7 @@
 package org.example.config;
 
 import org.example.model.TOrder;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -23,4 +24,11 @@ public class Config {
         tOrder.setName("byConfig");
         return tOrder;
     }
+
+    @Bean
+    @ConditionalOnMissingBean(DataMaskingProperties.class)
+    public DataMaskingProperties dataMaskingProperties() {
+        return new DataMaskingProperties();
+    }
+
 }

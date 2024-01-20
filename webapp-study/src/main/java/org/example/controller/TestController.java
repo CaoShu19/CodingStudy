@@ -20,6 +20,7 @@ import java.sql.SQLOutput;
 @RestController
 public class TestController {
 
+
     @PostMapping("order/adds")
     public String orderAdd(@RequestBody @Validated TOrder order) {
         System.out.println(new Gson().toJson(order));
@@ -43,5 +44,10 @@ public class TestController {
         // after retry will call this method , you can write to log file
         System.out.println("retry and be called");
         return "400";
+    }
+
+    @GetMapping("/codeAES")
+    public String testAES() {
+        return "";
     }
 }
