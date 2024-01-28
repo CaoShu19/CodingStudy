@@ -85,14 +85,6 @@ public class ListToMap {
 
 @Builder
 @Data
-class Student {
-    String name;
-    String id;
-}
-
-
-@Builder
-@Data
 class Teacher {
     String name;
     String no;
