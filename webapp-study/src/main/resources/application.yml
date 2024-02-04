@@ -6,3 +6,12 @@ data:
   masking:
     keyMap:
       MY: 6bb4837eb74329105ee4568dda7dc67e
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+
+  profiles:
+    active: dev
